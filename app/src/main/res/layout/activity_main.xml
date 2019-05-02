@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/grey"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/register"
+                    android:textColor="#000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/garis"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/LinearText"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvNama"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="@string/nama"
+                            android:textColor="#000"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/tvNim"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="@string/nim"
+                            android:textColor="#000"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/tvProdi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="@string/prodi"
+                            android:textColor="#000"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/tvKelas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="@string/kelas"
+                            android:textColor="#000"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/tvStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="@string/status"
+                            android:textColor="#000"
+                            android:textSize="22sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/etNama"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/nama"
+                            android:textColor="#000"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/etNim"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/nim"
+                            android:textColor="#000"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/etProdi"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/prodi"
+                            android:textColor="#000"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/etKelas"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/kelas"
+                            android:textColor="#000"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/etStatus"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/status"
+                            android:textColor="#000"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnBrowse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="10dp"
+                        android:text="Browse" />
+
+                    <ImageView
+                        android:id="@+id/inputfoto"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/grey"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvInputjdwl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/inputjadwal"
+                    android:textColor="#000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/garis2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <EditText
+                        android:id="@+id/etSenin"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Senin"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/etSelasa"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Selasa"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/etRabu"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Rabu"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/etKamis"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Kamis"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/id_add"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add_black"
+                android:tint="#0E0D0D"
+                android:layout_gravity="right"
+                app:backgroundTint="@color/design_default_color_primary_dark" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

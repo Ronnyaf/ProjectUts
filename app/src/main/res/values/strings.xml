@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ProjectUts</string>
+    <string name="register">Register</string>
+    <string name="nama">Nama</string>
+    <string name="nim">Nim</string>
+    <string name="prodi">Prodi</string>
+    <string name="kelas">Kelas</string>
+    <string name="status">Status</string>
+    <string name="inputjadwal">Input Jadwal</string>
+
+    <string name="senin">Senin</string>
+    <string name="selasa">Selasa</string>
+    <string name="rabu">Rabu</string>
+    <string name="kamis">Kamis</string>
+</resources>
